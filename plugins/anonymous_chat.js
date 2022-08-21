@@ -30,11 +30,11 @@ async function handler(m, { command, usedPrefix }) {
             if (Object.values(this.anonymous).find(room => room.check(m.sender))) throw 'Kamu masih berada di dalam anonymous chat'
             let room = Object.values(this.anonymous).find(room => room.state === 'WAITING' && !room.check(m.sender))
             if (room) {
-             //   this.send2Button(room.a, 'Menemukan partner!', '© Aine', 'Next Partner..', '/skip', 'Stop..', '/stop', m)
+             //   this.send2Button(room.a, 'Menemukan partner!', '© XLaw XD', 'Next Partner..', '/skip', 'Stop..', '/stop', m)
                 this.reply(room.a, 'Menemukan partner!', m)
                 room.b = m.sender
                 room.state = 'CHATTING'
-                //this.send2Button(room.b, 'Menemukan partner!', '© Aine', 'Next Partner..', '/skip', 'Stop..', '/stop', m)
+                //this.send2Button(room.b, 'Menemukan partner!', '© XLaw XD', 'Next Partner..', '/skip', 'Stop..', '/stop', m)
                 this.reply(room.b, 'Menemukan partner!', m)
             } else {
                 let id = + new Date

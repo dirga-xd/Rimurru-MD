@@ -49,7 +49,7 @@ handler.group = true
 handler.private = false
 
 handler.admin = false
-handler.botAdmin = false
+handler.botAdmin = true
 
 handler.fail = null
 handler.exp = 0
